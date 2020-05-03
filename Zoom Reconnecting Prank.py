@@ -29,7 +29,7 @@ def alertChat() :
     pg.moveTo(x=700, y=708)
     pg.click()
     # Send Message to Chat
-    pg.write('Bunleap is Reconnecting! .....')
+    pg.write('Username is Reconnecting! .....')
     pg.press('enter')
 
 # Give You Sometimes to Switch to Zoom -- 10 Sec --
