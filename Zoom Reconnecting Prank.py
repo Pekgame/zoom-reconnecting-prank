@@ -1,9 +1,8 @@
 # All import modules
 import pyautogui as pg
+import time
 
-# Switch to Zoom
-def switchApp() :
-    pg.hotkey('alt', 'tab')
+# Functions
 
 def muteZoomAudio() :
     # locate the Mute-Audio Button
@@ -30,13 +29,15 @@ def alertChat() :
     pg.moveTo(x=700, y=708)
     pg.click()
     # Send Message to Chat
-    pg.write('A User is Reconnecting! .....')
+    pg.write('Bunleap is Reconnecting! .....')
     pg.press('enter')
 
-switchApp()
+# Give You Sometimes to Switch to Zoom -- 10 Sec --
+time.sleep(10)
 muteZoomAudio()
 stopZoomVideo()
 renameZoomUser()
 alertChat()
-#Alert when Complete
+
+# Alert when Complete
 pg.alert('The Action is Done! Press Enter or Ok to Continue')
